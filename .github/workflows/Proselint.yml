@@ -1,8 +1,9 @@
 name: Proselint
 
 on:
-  pull_request
-
+  pull_request:
+    types: [opened, reopened, synchronize]
+    
 jobs:
   check-prose:
     runs-on: ubuntu-latest
